@@ -5,7 +5,7 @@
   "main": "./index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/justmoon/node-bignum.git"
+    "url": "http://github.com/clintar/node-bignum.git"
   },
   "keywords": [
     "openssl",
