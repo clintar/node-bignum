@@ -22,24 +22,16 @@
     "url": "http://www.justmoon.net"
   },
   "dependencies": {
-    "nan": "^2.3.4",
-    "node-pre-gyp": "~0.6.28"
+    "nan": "^2.3.4"
   },
   "devDependencies": {
-    "aws-sdk": "~2.4.0",
     "put": "~0.0.5",
     "standard": "~7.1.2",
     "tap": "~5.7.2"
   },
   "scripts": {
-    "install": "node-pre-gyp install --fallback-to-build",
+    "install": "node-gyp configure build",
     "test": "standard && tap --timeout 120 test/*.js"
-  },
-  "binary": {
-    "host": "https://rvagg-node.s3-us-west-2.amazonaws.com",
-    "module_name": "bignum",
-    "module_path": "binding/",
-    "remote_path": "./{name}/v{version}"
   },
   "license": "MIT",
   "contributors": [
